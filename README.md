@@ -1,5 +1,5 @@
 # GENERAL
-This function helps to export ec2 instances into vmdk vhk or raw format into an S3 bucket which i screated via this script itself.
+This function helps to export ec2 instances into vmdk vhk or raw format into an S3 bucket which is created via this script itself.
 
 ## PRE_REQUISITES
 - Install boto3
