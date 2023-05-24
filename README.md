@@ -50,7 +50,7 @@ This function helps to export ec2 instances into vmdk vhk or raw format into an 
     }
   ]
 }
-```
+
 ### Create a config.py file with 5 variables
 1. aws_access_key_id        - from aws console
 2. aws_secret_access_key    - from aws console
