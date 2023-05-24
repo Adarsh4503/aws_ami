@@ -5,51 +5,51 @@ This function helps to export ec2 instances into vmdk vhk or raw format into an 
 - Install boto3
 
 - Attach the following policy to your amazon account ( enter your bucket name at mys3bucket }
-    ```
-    {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": [
-        "s3:GetBucketLocation",
-        "s3:GetObject",
-        "s3:PutObject"
-      ],
-      "Resource": ["arn:aws:s3:::mys3bucket","arn:aws:s3:::mys3bucket/*"]
-    },
-    {
-      "Effect": "Allow",
-      "Action": [
-        "ec2:CancelConversionTask",
-        "ec2:CancelExportTask",
-        "ec2:CreateImage",
-        "ec2:CreateInstanceExportTask",
-        "ec2:CreateTags",
-        "ec2:DescribeConversionTasks",
-        "ec2:DescribeExportTasks",
-        "ec2:DescribeExportImageTasks",
-        "ec2:DescribeImages",
-        "ec2:DescribeInstanceStatus",
-        "ec2:DescribeInstances",
-        "ec2:DescribeSnapshots",
-        "ec2:DescribeTags",
-        "ec2:ExportImage",
-        "ec2:ImportInstance",
-        "ec2:ImportVolume",
-        "ec2:StartInstances",
-        "ec2:StopInstances",
-        "ec2:TerminateInstances",
-        "ec2:ImportImage",
-        "ec2:ImportSnapshot",
-        "ec2:DescribeImportImageTasks",
-        "ec2:DescribeImportSnapshotTasks",
-        "ec2:CancelImportTask"
-      ],
-      "Resource": "*"
+  ```
+     {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": [
+                "s3:GetBucketLocation",
+                "s3:GetObject",
+                "s3:PutObject"
+              ],
+              "Resource": ["arn:aws:s3:::mys3bucket","arn:aws:s3:::mys3bucket/*"]
+            },
+            {
+              "Effect": "Allow",
+              "Action": [
+                "ec2:CancelConversionTask",
+                "ec2:CancelExportTask",
+                "ec2:CreateImage",
+                "ec2:CreateInstanceExportTask",
+                "ec2:CreateTags",
+                "ec2:DescribeConversionTasks",
+                "ec2:DescribeExportTasks",
+                "ec2:DescribeExportImageTasks",
+                "ec2:DescribeImages",
+                "ec2:DescribeInstanceStatus",
+                "ec2:DescribeInstances",
+                "ec2:DescribeSnapshots",
+                "ec2:DescribeTags",
+                "ec2:ExportImage",
+                "ec2:ImportInstance",
+                "ec2:ImportVolume",
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:TerminateInstances",
+                "ec2:ImportImage",
+                "ec2:ImportSnapshot",
+                "ec2:DescribeImportImageTasks",
+                "ec2:DescribeImportSnapshotTasks",
+                "ec2:CancelImportTask"
+              ],
+              "Resource": "*"
+            }
+          ]
     }
-  ]
-}
 
 ### Create a config.py file with 5 variables
 1. aws_access_key_id        - from aws console
