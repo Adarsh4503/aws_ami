@@ -33,10 +33,10 @@ session = boto3.Session(
     aws_secret_access_key=config.aws_secret_access_key
     )
 
-ec2 = session.resource('ec2')
-ec2_client=session.client('ec2')
+ec2 = session.resource('ec2',region_name=config.region)
+ec2_client=session.client('ec2',region_name=config.region)
 s3 = session.resource('s3',region_name=config.region)
-s3_client=session.client('s3')
+s3_client=session.client('s3',region_name=config.region)
 
 
 location = {'LocationConstraint': config.region}
