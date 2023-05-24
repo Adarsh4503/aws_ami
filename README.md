@@ -12,6 +12,7 @@
     
     unless you're targeting an S3 bucket in Bahrain, Hong Kong, Beijing,
     or GovCloud (US-West), which have different grantees.
+    
     See the docs:
     https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html
                              
