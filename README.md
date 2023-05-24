@@ -1,6 +1,7 @@
-""" PRE_REQUISITES
-Install boto3
-create a config.py file with 5 variables
+#PRE_REQUISITES
+-Install boto3
+.
+##create a config.py file with 5 variables
 1.aws_access_key_id        - from aws console
 2.aws_secret_access_key    - from aws console
 3.region                   - region in which the ec2 is present
@@ -11,5 +12,6 @@ create a config.py file with 5 variables
                              or GovCloud (US-West), which have different grantees.
                              See the docs
                              https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html
+                             
 enter the values in the file and save it where you run this script
-    """
+    
