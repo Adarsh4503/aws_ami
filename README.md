@@ -1,8 +1,11 @@
-# PRE_REQUISITES
+# GENERAL
+This function helps to export ec2 instances into vmdk vhk or raw format into an S3 bucket which i screated via this script itself.
+
+## PRE_REQUISITES
 - Install boto3
 
 
-## Create a config.py file with 5 variables
+### Create a config.py file with 5 variables
 1. aws_access_key_id        - from aws console
 2. aws_secret_access_key    - from aws console
 3. region                   - region in which the ec2 is present
