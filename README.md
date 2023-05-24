@@ -4,7 +4,7 @@ This function helps to export ec2 instances into vmdk vhk or raw format into an 
 ## PRE_REQUISITES
 - Install boto3
 
-- Attach the following policy to your amazon account 
+- Attach the following policy to your amazon account ( enter your bucket name at mys3bucket }
     ```
     {
   "Version": "2012-10-17",
