@@ -1,4 +1,5 @@
 """ PRE_REQUISITES
+Install boto3
 create a config.py file with 5 variables
 1.aws_access_key_id        - from aws console
 2.aws_secret_access_key    - from aws console
