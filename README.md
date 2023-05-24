@@ -18,3 +18,4 @@
                              
 **enter the values in the file and save it where you run this script**
     
+PS Currently, the script has a slight error and after running the script once please go to the bucket created and enable ACL
